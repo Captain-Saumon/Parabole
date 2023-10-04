@@ -1,0 +1,61 @@
+#liens_pages
+{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+h1
+{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgb(36, 36, 36);
+}
+
+#titre
+{
+    background-color: white;
+    padding : 5px;
+    max-width: 25%;
+    margin:auto;
+    border-radius: 15px;
+}
+
+h2
+{
+    color: white;
+    text-align: center;
+}
+
+p
+{
+    color:black
+}
+
+#contenu
+{
+    background-color: white;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#contenu_texte
+{
+    padding-left:5px;
+
+}
+
+#photo_contenu
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+#left_right
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+

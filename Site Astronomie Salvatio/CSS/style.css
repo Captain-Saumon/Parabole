@@ -1,0 +1,418 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'policeHeader';
+  src: url('TechnoRaceItalic-eZRWe.otf');
+}
+
+@font-face {
+  font-family: 'dosisHeader';
+  src: url('Dosis.ttf');
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -0, 0);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -0, 0);
+  }
+}
+
+header {
+  margin-top: 0px;
+  padding: 30px;
+  border: 5px solid;
+  border-image-slice: 10;
+  border-image-source: linear-gradient(to left, #C8141F, #001C4E);
+  background-color: transparent;
+  background-size: cover;
+  color: #fffffffc;
+  text-align: center;
+  font-size: 28px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  animation: fadeIn 1.2s;
+  padding-top: 0;
+}
+
+nav {
+
+  text-align: center;
+  background-color: transparent;
+  overflow: hidden;
+  width: 80%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+
+nav a {
+  border: 5px solid;
+  border-image-slice: 1;
+  border: #C8141F;
+  list-style: none;
+  display: inline-block;
+  background-color: transparent;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 50px;
+  font-size: 17px;
+  animation: fadeInTop 0.8s;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+nav a:hover {
+  border-style: solid;
+  border: color(white);
+  background-color: #2f2f2f;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease;
+}
+
+nav a.active {
+  background-color: transparent;
+  color: #f1f1f1;
+}
+
+nav a.bactive {
+  border-style: solid;
+  border: color(white);
+  background-color: transparent;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-right: 10px;
+  width: 100%;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to bottom, black, rgb(2, 1, 7));
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section1,
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../Images/Terre.png");
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(2px);
+  margin-top: 28%;
+}
+
+.section1::after {
+  padding-top: 400vh;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  background-size: contain ;
+}
+
+.section1 .text {
+  margin-top: 10%;
+  font-size: 400%;
+  top: 10%;
+  transform: translateZ(-0.5px)scale (1.5, 1.6)translate(-33%, 10%);
+}
+
+.section2 {
+  background: linear-gradient(to bottom, transparent, rgb(0, 0, 0)), url("../Images/Moon.png");
+}
+
+.section3 {
+  bottom: 10000%;
+  color: white;
+}
+
+#liens_pages {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+h1 {
+  color: aliceblue;
+  text-align: center;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgb(36, 36, 36);
+}
+
+#titre {
+  background: linear-gradient(#4b81ff, #0042ea);
+  padding: 7px;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+
+#contenu {
+  background-color: white;
+  width: 672px;
+  margin: auto;
+  border-radius: 15px;
+}
+
+#contenu_texte {
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+#photo_contenu {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+
+#left_right {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#fin {
+  color: aliceblue;
+  width: 100%;
+  margin-top: 20%;
+  text-align: center;
+  padding-top:-50%;
+}
+
+
+
+
+.container {
+  position: relative;
+  width: 30%;
+  margin: auto;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+  background: linear-gradient(#b5cafb, #00113b);
+  border-radius: 15%;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text2 {
+  top: 43%;
+  left: 20%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 3vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text {
+  top: -69%;
+  left: 50%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 7vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
+.text3 {
+  top:60%;
+  right: 40%;
+  left: 42%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text4 {
+  top:60%;
+  right: 40%;
+  left: 34%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text5 {
+  top:60%;
+  right: 40%;
+  left: 36%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text6 {
+  top:60%;
+  right: 10%;
+  left: 25%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text7 {
+  top:60%;
+  right: 20%;
+  left: 27%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+.text8 {
+  top:60%;
+  right: 20%;
+  left: 33%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(86, 86, 86);
+  border-radius: 2px;
+}
+.text9 {
+  top: 37%;
+  left: 50%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 5.5vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
+.text10 {
+  margin-left: 20%;
+  text-align: center;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 5vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  animation: fadeInBottom 0.8s;
+  transform: scale(1, 1.1) translate(0%, 50%);
+
+}
+.text11 {
+  top: 235%;
+  left: 50%;
+  position: absolute;
+  font-family: 'Franklin Gothic Heavy';
+  font-size: 5.5vw;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
